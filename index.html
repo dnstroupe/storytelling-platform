@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Data Storytelling Platform</title>
+    <link rel="stylesheet" href="dist/style.css" />
+    <!-- Leaflet.js CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    />
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <header class="text-center py-5 bg-blue-600 text-white">
+      <h1 class="text-4xl font-bold">Interactive Data Storytelling Platform</h1>
+    </header>
+    <main id="app" class="container mx-auto p-5">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-4 shadow rounded-lg">
+          <h2 class="text-xl font-semibold mb-3">Upload Dataset</h2>
+          <input type="file" id="dataset" class="border p-2 w-full" />
+        </div>
+        <div class="bg-white p-4 shadow rounded-lg">
+          <h2 class="text-xl font-semibold mb-3">Add Text</h2>
+          <textarea
+            id="text-element"
+            class="border p-2 w-full"
+            placeholder="Add your text..."
+          ></textarea>
+        </div>
+        <div class="bg-white p-4 shadow rounded-lg">
+          <h2 class="text-xl font-semibold mb-3">Chart</h2>
+          <canvas id="myChart" width="400" height="200"></canvas>
+        </div>
+        <div class="bg-white p-4 shadow rounded-lg">
+          <h2 class="text-xl font-semibold mb-3">Map</h2>
+          <div id="map" class="h-64 w-full"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Include Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Include Leaflet.js -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+    <!-- Include your custom JS -->
+    <script src="src/app.js"></script>
+  </body>
+</html>

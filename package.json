@@ -1,0 +1,17 @@
+{
+  "name": "storytelling-platform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^4.4.4",
+    "leaflet": "^1.9.4",
+    "tailwindcss": "^3.4.12"
+  }
+}
